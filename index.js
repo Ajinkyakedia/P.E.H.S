@@ -1,0 +1,71 @@
+var express =require("express");
+var app=express()
+app.use(express.static("public/"))
+app.get("/",function(req,res){
+    res.render("home_page.ejs");
+})
+app.get("/e_learning",function(req,res){
+    res.render("e_learning.ejs");
+})
+app.get("/pay_fees_online",function(req,res){
+    res.render("pay_fees_online.ejs");
+})
+app.get("/aboutus",function(req,res){
+    res.render("about_us.ejs");
+})
+app.get("/institution",function(req,res){
+    res.render("institution.ejs");
+})
+app.get("/kg",function(req,res){
+    res.render("kg.ejs");
+})
+app.get("/primary",function(req,res){
+    res.render("primary.ejs");
+})
+app.get("/junior_colege",function(req,res){
+    res.render("junior_college.ejs");
+})
+app.get("/hindi_mela",function(req,res){
+    res.render("hindi_mela.ejs");
+})
+app.get("/kite_making",function(req,res){
+    res.render("kite_making.ejs");
+})
+app.get("/rakshabandhan",function(req,res){
+    res.render("rakshabandhan.ejs");
+})
+app.get("/christmas",function(req,res){
+    res.render("christmas.ejs");
+})
+app.get("/diwali",function(req,res){
+    res.render("diwali.ejs");
+})
+app.get("/gokul_ashtami",function(req,res){
+    res.render("gokul_ashtami.ejs");
+})
+app.get("/annualsports",function(req,res){
+    res.render("annualsports.ejs");
+})
+app.get("/kite_making",function(req,res){
+    res.render("kite_making.ejs");
+})
+app.get("/internation_yogaday",function(req,res){
+    res.render("internation_yogaday.ejs");
+})
+app.get("/guru_pornima",function(req,res){
+    res.render("guru_pornima.ejs");
+})
+app.get("/awards",function(req,res){
+    res.render("awards.ejs");
+})
+app.get("/medals",function(req,res){
+    res.render("medals.ejs");
+})
+app.get("/under_dags",function(req,res){
+    res.render("under_dags.ejs");
+})
+app.get("/ping_pong_knight",function(req,res){
+    res.render("ping_pong_knight.ejs");
+})
+
+app.listen(1000)
